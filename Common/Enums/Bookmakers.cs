@@ -1,6 +1,6 @@
 ﻿namespace Common
 {
-    public enum EBookmakers
+    public enum Bookmakers
     {
         _betcity = 1,
         _marathon = 2,

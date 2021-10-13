@@ -1,6 +1,6 @@
 ﻿namespace Common
 {
-    public enum ESport
+    public enum Sport
     {
         Football = 101, 
         Tennis = 102,

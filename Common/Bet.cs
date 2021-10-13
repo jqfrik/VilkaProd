@@ -14,7 +14,7 @@ namespace Common
         /// <summary>
         /// букмекер,участвующую в вилке в конкретной ставке
         /// </summary>
-        public EBookmakers Bookmaker { get; set; }
+        public Bookmakers Bookmaker { get; set; }
 
         /// <summary>
         /// Коэффициент ставки
@@ -24,7 +24,7 @@ namespace Common
         /// <summary>
         /// Повышается,понижается,стоит на месте коэффициент
         /// </summary>
-        public EDirection Direction { get; set; }
+        public Direction Direction { get; set; }
 
         /// <summary>
         /// Идентификатор ставки в конкретной букмекерской конторе
@@ -34,7 +34,7 @@ namespace Common
         /// <summary>
         /// Тип спорта в ставке
         /// </summary>
-        public ESport Sport { get; set; }
+        public Sport Sport { get; set; }
 
         /// <summary>
         /// Название ставки (например ТБ 7.5Б)
@@ -42,25 +42,15 @@ namespace Common
         public string BetValue { get; set; }
 
         /// <summary>
-        /// В скольких вилках участвует данная ставка
-        /// </summary>
-        public int ForksCount { get; set; }
-
-        /// <summary>
-        /// Идентификатор события
+        /// Идентификатор события(обычно в цифровом виде)
         /// </summary>
         public string EvId { get; set; }
-
-        /// <summary>
-        /// Метаданные для получения подробной информации о ставке
-        /// </summary>
-        public string OtherData { get; set; }
 
         /// <summary>
         /// //Команды или игроки,которые участвует в текущей ставке в конкретном 
         /// букмекере
         /// </summary>
-        public string Team { get; set; }
+        public Teams Teams { get; set; }
 
         /// <summary>
         /// Состояние текущего поединка,матча(пример  1 тайм 22 min,2 партия, 2 сет, 1 тайм 21:44)

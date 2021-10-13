@@ -28,75 +28,42 @@ namespace Common
         /// <summary>
         /// тип спорта
         /// </summary>
-        public ESport Sport { get; set; }
+        public Sport Sport { get; set; }
 
         /// <summary>
         /// букмекеры,которые участвуют в вилке
         /// </summary>
-        public string Bookmakers
-        { 
-            get
-            {
-                return string.Format("{0} - {1}", (object)this.OneBet?.Bookmaker, (object)this.TwoBet?.Bookmaker);
-            }
-        }
+        public BookmakersName Bookmakers { get; set; }
+       
+        /// <summary>
+        /// Команды,играющие в первой ставке
+        /// </summary>
+        public Teams TeamsFirstStake { get; set; }
 
         /// <summary>
-        /// какие команды играют
+        /// Команды,играющие во второй ставке
         /// </summary>
-        public string Teams
-        {
-            get
-            {
-                return string.Format("{0} - {1}", (object)this.OneBet?.Team, (object)this.TwoBet?.Team);
-            }
-        }
+        public Teams TeamsSecondStake { get; set; }
 
         /// <summary>
         /// состояние матча(счёт,период,тайм) в обоих букмекерах
         /// </summary>
-        public string Other
-        {
-            get
-            {
-                return string.Format("{0} - {1}", (object)this.OneBet?.MatchData, (object)this.TwoBet?.MatchData);
-            }
-        }
+        public MatchDatas MatchData { get; set; }
 
         /// <summary>
         /// ставка для первого букмекера в вилке
         /// </summary>
-        public Bet OneBet { get; set; }
+        public Bet FirstBet { get; set; }
 
         /// <summary>
         /// ставка для второго букмекера в вилке
         /// </summary>
-        public Bet TwoBet { get; set; }
+        public Bet SecondBet { get; set; }
 
         /// <summary>
         /// время создания вилки
         /// </summary>
         public DateTime Creted { get; }
-
-        /// <summary>
-        /// Метаданные fork.K1 + fork.K2 для получения данных об актуальном Url
-        /// </summary>
-        public string CridId { get; set; }
-
-        /// <summary>
-        /// метаданные для первого букмекера
-        /// </summary>
-        public string K1 { get; set; }
-
-        /// <summary>
-        /// метаданные для второго букмекера
-        /// </summary>
-        public string K2 { get; set; }
-
-        /// <summary>
-        /// метаданные для получения данных об Url,Elid берётся из ссылки на позитиве
-        /// </summary>
-        public string Elid { get; set; }
 
         public Fork(long id)
         {

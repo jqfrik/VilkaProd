@@ -8,7 +8,7 @@ namespace Common.NonCommon
 {
     public class Bookmaker
     {
-        public EBookmakers Ebookmaker { get; set; }
+        public Bookmakers Ebookmaker { get; set; }
 
         public string Url { get; set; }
 

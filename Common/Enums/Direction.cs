@@ -1,6 +1,6 @@
 ﻿namespace Common
 {
-    public enum EDirection
+    public enum Direction
     {
         Down = -1,
         Freeze = 0,
