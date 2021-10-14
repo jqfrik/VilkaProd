@@ -4,18 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Common.NonCommon
+namespace SecondAttemptDomains
 {
-    public class Bookmaker
+    public class User
     {
-        public Bookmakers Ebookmaker { get; set; }
-
-        public string Url { get; set; }
+        public long Id { get; set; }
 
         public string Login { get; set; }
 
         public string Password { get; set; }
 
-        public double Balance { get; set; }
+        public string Hash { get; set; }
+
+        public bool IsActive { get; set; }
     }
 }
