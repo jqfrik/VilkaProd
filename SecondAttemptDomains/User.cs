@@ -9,13 +9,17 @@ namespace SecondAttemptDomains
     public class User
     {
         public long Id { get; set; }
-
+        /// <summary>
+        /// Логин пользователя
+        /// </summary>
         public string Login { get; set; }
-
+        /// <summary>
+        /// Пароль пользователя
+        /// </summary>
         public string Password { get; set; }
-
-        public string Hash { get; set; }
-
+        /// <summary>
+        /// Активность пользователя
+        /// </summary>
         public bool IsActive { get; set; }
     }
 }
