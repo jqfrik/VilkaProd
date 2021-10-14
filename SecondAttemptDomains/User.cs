@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace SecondAttemptDomains
 {
+    /// <summary>
+    /// Пользователь
+    /// </summary>
     public class User
     {
         public long Id { get; set; }

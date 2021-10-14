@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace SecondAttemptDomains
 {
+    /// <summary>
+    /// Команды
+    /// </summary>
     public class Teams
     {
         /// <summary>

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace SecondAttemptDomains
 {
+    /// <summary>
+    /// Ставка
+    /// </summary>
     public class Bet
     {
         /// <summary>

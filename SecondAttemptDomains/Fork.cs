@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace SecondAttemptDomains
 {
+    /// <summary>
+    /// Вилка
+    /// </summary>
     public class Fork
     {
         public long Id { get; set; }

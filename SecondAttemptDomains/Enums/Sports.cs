@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace SecondAttemptDomains.Enums
 {
+    /// <summary>
+    /// Виды спорта
+    /// </summary>
     public enum Sports
     {
         Football,
